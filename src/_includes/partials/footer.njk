@@ -3,16 +3,16 @@
         <div class="site-foot-nav-left">
             <a aria-current="page" class="" href="/">
                 {{ site.title }}
-            </a> &copy; 2020 – Published with
-            <a class="site-foot-nav-item" href="https://ghost.org" target="_blank" rel="noopener noreferrer">
-                Ghost
+            </a> &copy; 2022 |
+            <a class="site-foot-nav-item" href="https://eloy.co" target="_blank" rel="noopener noreferrer">
+                eloy.co
             </a>
         </div>
-        {% if collections.docs %}
+        {% if site.secondary_navigation %}
             <div class="site-foot-nav-right">
-                {% for doc in collections.docs %}
-                    <a {% if page.url == doc.url %}aria-current="page"{% endif %}  class="site-foot-nav-item" href="{{ doc.url }}">
-                        {{ doc.meta_title if doc.meta_title else doc.title }}
+                {% for item in site.secondary_navigation %}
+                    <a {% if page.url == item.url %}aria-current="page"{% endif %}  class="site-foot-nav-item" href="{{ item.url }}">
+                        &nbsp;{{ item.title if item.title else item.label }}
                     </a>
                 {% endfor %}
             </div>
