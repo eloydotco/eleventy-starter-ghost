@@ -683,7 +683,7 @@ h6 {
   display: flex;
   /* padding: 5px 10px; */
   color: #fff;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .site-nav-item:hover {
@@ -765,9 +765,9 @@ h6 {
   /* font-size: 1.3rem; */
   line-height: 1.2em;
   border-radius: var(--radius);
-  opacity: 0.7;
+  opacity: 0.8;
   font-weight: 500;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .site-nav-button:hover {
