@@ -26,7 +26,7 @@ module.exports = function (config) {
   config.addTransform("htmlmin", htmlMinTransform);
 
   // Assist RSS feed template
-  // config.addPlugin(pluginRSS);
+  config.addPlugin(pluginRSS);
 
   // Apply performance attributes to images
   config.addPlugin(lazyImages, { cacheFile: "" });
